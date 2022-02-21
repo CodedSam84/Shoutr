@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ .photo-wrapper {
+  width:300px;
+  height:250px;
+  margin-bottom:10px;
+ }
