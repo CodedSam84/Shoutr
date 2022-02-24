@@ -15,7 +15,22 @@
  */
 
  .photo-wrapper {
-  width:300px;
-  height:250px;
+  width:200px;
+  height:100px;
   margin-bottom:10px;
+  background-size: cover;
+  margin: 5px 5px;
+ }
+
+ .shout-container {
+   display: flex;
+   align-items: flex-end;
+ }
+
+ .avatar-wrapper {
+   margin-right: 5px;
+ }
+
+ .text-shout-margin {
+   margin: 0 5px;
  }
