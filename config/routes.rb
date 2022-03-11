@@ -21,7 +21,7 @@ Rails.application.routes.draw do
       only: [:edit, :update]
   end
 
-  resources :shouts, only: [:create, :show] do
+  resources :shouts, only: [:show] do
     member do 
       post :like, to: "likes#create"
       delete :unlike, to: "likes#destroy"
