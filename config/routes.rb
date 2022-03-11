@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   end
 
   root "homes#show"
+  post :text_shouts, to: "shouts#create", defaults: { content_type: TextShout }
+  post :photo_shouts, to: "shouts#create", defaults: { content_type: PhotoShout }
 
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, only: [:create]
