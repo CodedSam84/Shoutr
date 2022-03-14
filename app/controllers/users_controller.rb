@@ -1,7 +1,7 @@
 class UsersController < Clearance::UsersController
   def show
     @user = User.find_by_username(params[:id])
-    @user? @shouts = @user.shouts : redirect
+    @user? @timeline = Timeline.new([@user]): redirect
   end
 
   private
