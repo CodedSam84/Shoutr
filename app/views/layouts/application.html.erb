@@ -24,6 +24,8 @@
     <% else %>
       <%= link_to 'Sign in', sign_in_path %>
     <% end %>
+
+    <%= render "search" %>
     <%= yield %>
   </body>
 </html>
